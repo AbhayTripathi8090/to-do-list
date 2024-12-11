@@ -1,0 +1,154 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF6E9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styles */
+.container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Title styles */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #78B3CE;
+}
+
+/* Add task input and button container */
+.addTask {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Input field styles */
+#inputTask {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#inputTask:focus {
+    border-color: #007bff;
+}
+
+/* Button styles */
+.addTask button {
+    background-color: #80C4E9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.addTask button:hover {
+    background-color: #4335A7;
+}
+
+/* Task list styles */
+.totalTask {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #f8f8f8;
+}
+
+/* Scrollbar styling */
+.totalTask::-webkit-scrollbar {
+    width: 8px;
+}
+
+.totalTask::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.totalTask::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}
+
+/* Task item styles */
+.totalTask div {
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.totalTask div:hover {
+    transform: scale(1.02);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Task buttons (e.g., delete, complete) */
+.totalTask div button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.totalTask div button:hover {
+    background-color: #c82333;
+}
+/* General button styling */
+button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Delete button */
+button:nth-child(2) {
+    background-color: #dc3545;
+    color: white;
+}
+
+button:nth-child(2):hover {
+    background-color: #c82333;
+}
+
+/* Edit button */
+button:nth-child(3) {
+    background-color: #ffc107;
+    color: white;
+}
+
+button:nth-child(3):hover {
+    background-color: #e0a800;
+}
+
